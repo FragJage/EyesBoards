@@ -1,0 +1,701 @@
+{
+	"EyesBoards" :
+	{
+		"Version" : "1.0.0",
+		"Title" : "Découverte des couleurs",
+		"Description" : "Découverte des couleurs (rouge, vert et bleu)",
+		"Boards" :
+		[
+			{
+				"Name" : "Question couleur poisson",
+				"Frames" :
+				[
+					{
+						"Name" : "Question",
+						"Geometry" : 
+						{
+							"X" : 300,
+							"Y" : 100,
+							"Width" : 200,
+							"Height" : 150
+						},
+						"Anchor" :
+						{
+							"Right" : 25,
+							"Bottom" : 25,
+							"Width" : 50,
+							"Height" : 25
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "poisson_rouge.jpg",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "Le poisson",
+							"VerticalAlign" : "Top",
+							"HorizontalAlign" : "Center",
+							"Font" : "Arial, 18"
+						},
+						"OnHover" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Quelle est la couleur du poisson ?"]
+							}
+						]
+					},
+					{
+						"Name" : "Reponse1",
+						"Geometry" : 
+						{
+							"X" : 130,
+							"Y" : 350,
+							"Width" : 160,
+							"Height" : 100
+						},
+						"Anchor" :
+						{
+							"Right" : 0,
+							"Bottom" : 50,
+							"Width" : 33.3,
+							"Height" : 50
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "tache_rouge.png",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "ROUGE",
+							"VerticalAlign" : "Bottom",
+							"HorizontalAlign" : "Center",
+							"Color" : "#D40C0C"
+						},
+						"OnClick" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Oui, le poisson est rouge !"]
+							},
+							{
+								"Function" : "BoardNavigation",
+								"Parameters" : ["Next"]
+							}
+						]
+					},
+					{
+						"Name" : "Reponse2",
+						"Geometry" : 
+						{
+							"X" : 320,
+							"Y" : 350,
+							"Width" : 160,
+							"Height" : 100
+						},
+						"Anchor" :
+						{
+							"Right" : 33.3,
+							"Bottom" : 50,
+							"Width" : 33.3,
+							"Height" : 50
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "tache_verte.png",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "VERT",
+							"VerticalAlign" : "Bottom",
+							"HorizontalAlign" : "Center",
+							"Color" : "#00BA00"
+						},
+						"OnClick" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Non, le poisson n'est pas vert !"]
+							}
+						]
+					},
+					{
+						"Name" : "Reponse3",
+						"Geometry" : 
+						{
+							"X" : 510,
+							"Y" : 350,
+							"Width" : 160,
+							"Height" : 100
+						},
+						"Anchor" :
+						{
+							"Right" : 66.6,
+							"Bottom" : 50,
+							"Width" : 33.3,
+							"Height" : 50
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "tache_bleue.png",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "BLEU",
+							"VerticalAlign" : "Bottom",
+							"HorizontalAlign" : "Center",
+							"Color" : "#001FBA"
+						},
+						"OnClick" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Non, le poisson n'est pas bleu !"]
+							}
+						]
+					}
+				]
+			},
+			{
+				"Name" : "Question couleur pomme",
+				"Frames" :
+				[
+					{
+						"Name" : "Question",
+						"Geometry" : 
+						{
+							"X" : 300,
+							"Y" : 100,
+							"Width" : 200,
+							"Height" : 150
+						},
+						"Anchor" :
+						{
+							"Right" : 25,
+							"Bottom" : 25,
+							"Width" : 50,
+							"Height" : 25
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "pomme_verte.jpg",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "La pomme",
+							"VerticalAlign" : "Top",
+							"HorizontalAlign" : "Center",
+							"Font" : "Arial, 18"
+						},
+						"OnHover" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Quelle est la couleur de la pomme ?"]
+							}
+						]
+					},
+					{
+						"Name" : "Reponse1",
+						"Geometry" : 
+						{
+							"X" : 130,
+							"Y" : 350,
+							"Width" : 160,
+							"Height" : 100
+						},
+						"Anchor" :
+						{
+							"Right" : 0,
+							"Bottom" : 50,
+							"Width" : 33.3,
+							"Height" : 50
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "tache_rouge.png",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "ROUGE",
+							"VerticalAlign" : "Bottom",
+							"HorizontalAlign" : "Center",
+							"Color" : "#D40C0C"
+						},
+						"OnClick" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Non, la pomme n'est pas rouge !"]
+							}
+						]
+					},
+					{
+						"Name" : "Reponse2",
+						"Geometry" : 
+						{
+							"X" : 320,
+							"Y" : 350,
+							"Width" : 160,
+							"Height" : 100
+						},
+						"Anchor" :
+						{
+							"Right" : 33.3,
+							"Bottom" : 50,
+							"Width" : 33.3,
+							"Height" : 50
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "tache_verte.png",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "VERT",
+							"VerticalAlign" : "Bottom",
+							"HorizontalAlign" : "Center",
+							"Color" : "#00BA00"
+						},
+						"OnClick" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Oui, la pomme est verte !"]
+							},
+							{
+								"Function" : "BoardNavigation",
+								"Parameters" : ["Next"]
+							}
+						]
+					},
+					{
+						"Name" : "Reponse3",
+						"Geometry" : 
+						{
+							"X" : 510,
+							"Y" : 350,
+							"Width" : 160,
+							"Height" : 100
+						},
+						"Anchor" :
+						{
+							"Right" : 66.6,
+							"Bottom" : 50,
+							"Width" : 33.3,
+							"Height" : 50
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "tache_bleue.png",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "BLEU",
+							"VerticalAlign" : "Bottom",
+							"HorizontalAlign" : "Center",
+							"Color" : "#001FBA"
+						},
+						"OnClick" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Non, la pomme n'est pas bleue !"]
+							}
+						]
+					}
+				]
+			},
+			{
+				"Name" : "Question couleur ballon",
+				"Frames" :
+				[
+					{
+						"Name" : "Question",
+						"Geometry" : 
+						{
+							"X" : 300,
+							"Y" : 100,
+							"Width" : 200,
+							"Height" : 150
+						},
+						"Anchor" :
+						{
+							"Right" : 25,
+							"Bottom" : 25,
+							"Width" : 50,
+							"Height" : 25
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "ballon_bleu.jpg",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "Le ballon",
+							"VerticalAlign" : "Top",
+							"HorizontalAlign" : "Center",
+							"Font" : "Arial, 18"
+						},
+						"OnHover" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Quelle est la couleur du ballon ?"]
+							}
+						]
+					},
+					{
+						"Name" : "Reponse1",
+						"Geometry" : 
+						{
+							"X" : 130,
+							"Y" : 350,
+							"Width" : 160,
+							"Height" : 100
+						},
+						"Anchor" :
+						{
+							"Right" : 0,
+							"Bottom" : 50,
+							"Width" : 33.3,
+							"Height" : 50
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "tache_rouge.png",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "ROUGE",
+							"VerticalAlign" : "Bottom",
+							"HorizontalAlign" : "Center",
+							"Color" : "#D40C0C"
+						},
+						"OnClick" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Non, le ballon n'est pas rouge !"]
+							}
+						]
+					},
+					{
+						"Name" : "Reponse2",
+						"Geometry" : 
+						{
+							"X" : 320,
+							"Y" : 350,
+							"Width" : 160,
+							"Height" : 100
+						},
+						"Anchor" :
+						{
+							"Right" : 33.3,
+							"Bottom" : 50,
+							"Width" : 33.3,
+							"Height" : 50
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "tache_verte.png",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "VERT",
+							"VerticalAlign" : "Bottom",
+							"HorizontalAlign" : "Center",
+							"Color" : "#00BA00"
+						},
+						"OnClick" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Non, le ballon n'est pas vert !"]
+							}
+						]
+					},
+					{
+						"Name" : "Reponse3",
+						"Geometry" : 
+						{
+							"X" : 510,
+							"Y" : 350,
+							"Width" : 160,
+							"Height" : 100
+						},
+						"Anchor" :
+						{
+							"Right" : 66.6,
+							"Bottom" : 50,
+							"Width" : 33.3,
+							"Height" : 50
+						},
+						"Frame" :
+						{
+							"Default":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#BBB",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							},
+							"Hover":
+							{
+								"Css" : "padding: 2px",
+								"BorderColor" : "#777",
+								"BorderWidth" : "1px",
+								"BorderStyle" : "solid",
+								"BorderRadius" : "4px"
+							}
+						},
+						"Image" :
+						{
+							"File" : "tache_bleue.png",
+							"PreserveLabelSpace" : true
+						},
+						"Label" :
+						{
+							"Text" : "BLEU",
+							"VerticalAlign" : "Bottom",
+							"HorizontalAlign" : "Center",
+							"Color" : "#001FBA"
+						},
+						"OnClick" :
+						[
+							{
+								"Function" : "Say",
+								"Parameters" : ["Oui, le ballon est bleu !"]
+							},
+							{
+								"Function" : "BoardNavigation",
+								"Parameters" : ["Next"]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
